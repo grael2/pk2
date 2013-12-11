@@ -14,12 +14,8 @@ public class AES {
 											// \0\0\0 <- beda to puste 3
 											// znaki; tutaj ten String nie jest
 											// używany
-	private static String encryptionKey = "6gT3QCuwR9FRpXfd";// klucz 128 bitów,
-																// wygenerowalem
-																// losowy
-																// w innym
-																// programie
-
+	private static String encryptionKey = "6gT3QCuwR9FRpXfd";// klucz 128 bitów
+							
 	public static byte[] encrypt(String plainText, String encryptionKey)
 			throws Exception {
 		Cipher cipher = Cipher.getInstance("AES/CBC/NoPadding", "SunJCE");
